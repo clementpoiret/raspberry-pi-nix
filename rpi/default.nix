@@ -8,7 +8,7 @@ let
   kernel = pkgs.rpi-kernels."${version}"."${board}";
 in
 {
-  imports = [ ../sd-image ./config.nix ./i2c.nix ];
+  imports = [ ./config.nix ./i2c.nix ];
 
   options = with lib; {
     raspberry-pi-nix = {
